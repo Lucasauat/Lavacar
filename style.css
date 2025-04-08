@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*no pude arreglar lo del html de contacto al hacerlo responsive y se me termino rompiendo en desktop tambien*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C4F74;
+    align-items: center;
+}
+header h2{
+    color: whitesmoke;
+    font-size: 200%;
+    
+}
+.auto-1{
+    width: 100%;
+}
+.logo img{
+    width: 85px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-right: 53px;
+}
+.custom-navbar .nav-link {
+    color: #ffffff;
+}
+
+.custom-navbar .nav-link:hover {
+    color: navajowhite;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+nav a:hover{
+    color: navajowhite;
+}
+
+                /* fin barra navegacion*/
+
+            /* boton para agendar citas*/
+
+
+.boton-agendar{
+    width: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+    padding: 10px 20px;
+    background-color: #2C4F74;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+            /* fin boton para agendar citas*/
+
+
+.encabezado{
+    align-items: center;
+    background-color: rgba(229, 228, 228, 2);
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80%;
+    gap: 1rem;
+    grid-template-areas: 
+    "text-taller text-taller img-taller";
+}
+.text-taller{
+    grid-area: text-taller;
+    text-align: center;
+    margin: 10px;
+}
+.text-taller h2 {
+    margin: 10px;
+}
+
+.img-taller{
+    grid-area: img-taller;
+    gap: 1rem; 
+    margin: 20px;
+    justify-content: center;
+   
+}
+
+
+            /* zona cuidados*/
+
+
+.cuidados{
+    text-align: center;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 15px;
+    background-color: rgba(229, 228, 228, 2);
+
+    padding-bottom: 30px;
+}
+section h2{
+    padding-top: 15px;
+}
+.test {
+    padding-top: 15px;
+}
+.cuidados-colum{
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 10px 10px 10px grey;
+    background-color: rgba(229, 228, 228, 2);
+    text-align: center;
+    padding: 10px;
+}
+.cuidados-colum h2{
+    color: red;
+    padding: 10px;
+}
+.cuidados-colum h3{
+    padding: 10px;
+}
+.cuidados-colum p{
+    margin: 20px;
+}
+
+            /* fin zona cuidados*/
+
+
+
+
+            /* zona testimonios*/
+.testimonios{
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+    background-color: lightgray;
+    padding-bottom: 30px;
+
+}
+            /*fin zona testimonios*/
+
+
+
+             /* NOSOTROS*/
+
+
+.nosotros{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.nos-p{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(229, 228, 228, 2);
+    background-color: rgba(229, 228, 228, 2);
+    box-shadow: 15px 15px 30px grey;
+}
+hr{
+    height: 8px;
+    background-color: black;
+}
+.auto-1{
+    margin-bottom: 15px;
+}
+
+
+             /* FIN NOSOTROS*/
+
+             /* SERVICIOS */
+main h2{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+   
+}
+.trabajos1{
+    display: grid;
+    background-color: rgba(229, 228, 228, 2);
+    box-shadow: 10px 10px 15px grey;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80%;
+    gap: 1rem;
+    grid-template-areas: 
+    "text-trabajos1 text-trabajos1 img-trabajo1";
+    justify-content: center;
+    align-items: center;
+}
+.text-trabajos1{
+    grid-area: text-trabajos1;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+.text-trabajos1 p {
+    margin: 10px;
+}
+.img-trabajo1{
+    grid-area: img-trabajo1;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.trabajos2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80%;
+    gap: 1rem;
+    grid-template-areas: 
+    "img-trabajo2 text-trabajos2 text-trabajos2";
+    justify-content: center;
+    align-items: center;
+}
+.text-trabajos2{
+    grid-area: text-trabajos2;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+.text-trabajos2 p {
+    margin: 10px;
+}
+.img-trabajo2{
+    grid-area: img-trabajo2;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+             /* FIN SERVICIOS */
+
+             /* CONTACTOS */
+.contacto{
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+}
+.img-cont{
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.text-cont{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+             /* FIN CONTACTOS */
+
+
+
+            /* FOOTER*/
+
+
+footer{
+    text-align: center; 
+    font-weight: bold;
+    background-color: #2C4F74;
+    color: whitesmoke;
+}
+            /* fin footer*/
+
+             /* MEDIA QUERY*/
+
+/* INDEX MOBILE*/
+@media screen and (max-width: 480px) {
+    .boton-agendar{
+        width: 35%;
+        margin-left: 35%;
+       
+    }
+    .encabezado {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+    .encabezado div img{
+        width: 100%;
+        border-radius: 10px;
+        max-width: 250px; 
+        height: auto;
+        display: block;
+    }
+    section .cuidados-colum{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        grid-area: 
+        "fila1 fila11"
+        "fila21 fila22";
+    
+    }
+
+/*SERVICIOS*/
+    .trabajos1,.trabajos2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+                "img"
+                "texto";
+            gap: 0;
+            padding: 1rem;
+    }
+        
+        
+    .img-trabajo1 {
+            grid-area: img;
+            display: flex;
+            justify-content: center;
+            
+    }
+    .text-trabajos1 {
+            grid-area: texto;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 100px;
+    }
+        
+       
+    .img-trabajo2 {
+            grid-area: img;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+    }
+    .text-trabajos2 {
+            grid-area: texto;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+    }
+        
+       
+    .img-trabajo1 img, .img-trabajo2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            justify-content: flex-start;
+    }
+
+/*CONTACTO*/  
+main .contacto1 .contacto2 {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+    }
+    .contacto1 .contacto2 .img-cont{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* asegura centrado dentro del div */
+      }
+}
