@@ -1,0 +1,15 @@
+@mixin medidas ($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
+@mixin footer ($background-color, $color){
+    background-color: $background-color;
+    color: $color;
+}
+@mixin encabezado($display, $flex-direction, $aling-items){
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $aling-items;
+}
+
+

@@ -98,6 +98,7 @@ section h2 {
 }
 
 .cuidados-colum {
+  padding: 10px;
   margin: 10px;
   border-radius: 10px;
   display: grid;
@@ -105,7 +106,6 @@ section h2 {
   box-shadow: 10px 10px 10px grey;
   background-color: rgb(229, 228, 228);
   text-align: center;
-  padding: 10px;
 }
 .cuidados-colum h2 {
   color: red;
@@ -132,9 +132,9 @@ section h2 {
 }
 .testimonios .comentario {
   max-width: 600px;
+  padding: 20px;
   margin: 20px auto;
   background-color: white;
-  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -197,8 +197,8 @@ main h2 {
 .text-trabajos1 {
   grid-area: text-trabajos1;
   text-align: center;
-  margin: 10px;
   padding: 20px;
+  margin: 10px;
 }
 .text-trabajos1 p {
   margin: 10px;
@@ -224,8 +224,8 @@ main h2 {
 .text-trabajos2 {
   grid-area: text-trabajos2;
   text-align: center;
-  margin: 10px;
   padding: 20px;
+  margin: 10px;
 }
 .text-trabajos2 p {
   margin: 10px;
@@ -310,7 +310,7 @@ footer {
   text-align: center;
   font-weight: bold;
   background-color: #2C4F74;
-  color: whitesmoke;
+  color: white;
 }
 
 /* fin footer*/

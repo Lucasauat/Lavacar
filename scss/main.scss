@@ -1,10 +1,14 @@
 
+@import "utilidades/variables";
+@import "utilidades/mixin";
 
+
+//nesting
 /*no pude arreglar lo del html de contacto al hacerlo responsive y se me termino rompiendo en desktop tambien*/
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #2C4F74;
+    background-color: $color-principal;
     align-items: center;
     h2{
         color: whitesmoke;
@@ -48,7 +52,7 @@ nav a:hover{
     margin-bottom: 20px;
     margin-left: 40%;
     padding: 10px 20px;
-    background-color: #2C4F74;
+    background-color: $color-principal;
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,16 +100,15 @@ section h2{
 }
 
 .cuidados-colum{
-    margin: 10px;
+    @include medidas(10px, 10px);
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     box-shadow: 10px 10px 10px grey;
     background-color: rgba(229, 228, 228, 2);
     text-align: center;
-    padding: 10px;
     h2{
-        color: red;
+        color: $color-cuidados;
         padding: 10px;
     }
     h3{
@@ -130,9 +133,8 @@ section h2{
                   }
                   .comentario {
                     max-width: 600px;
-                    margin: 20px auto;
+                    @include medidas(20px, 20px auto);
                     background-color: white;
-                    padding: 20px;
                     border-radius: 12px;
                     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
                     p {
@@ -195,8 +197,7 @@ main {
 .text-trabajos1{
     grid-area: text-trabajos1;
     text-align: center;
-    margin: 10px;
-    padding: 20px;
+    @include medidas(20px, 10px);
     p {
         margin: 10px;
     }
@@ -220,8 +221,7 @@ main {
 .text-trabajos2{
     grid-area: text-trabajos2;
     text-align: center;
-    margin: 10px;
-    padding: 20px;
+    @include medidas(20px, 10px);
     p{
         margin: 10px;
     }
@@ -243,13 +243,11 @@ main {
 }
 .img-cont{
     align-items: center;
-    padding: 10px;
-    margin: 10px;
+    @include medidas(10px, 10px);
 }
 .text-cont{
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    @include medidas(10px, 10px);
 }
 
              /* FIN CONTACTOS */
@@ -288,7 +286,7 @@ main {
             }
         
             .btn-comprar {
-              background-color: #2C4F74;
+              background-color: $color-principal;
               color: white;
               border: none;
               padding: 0.5rem 1rem;
@@ -308,8 +306,7 @@ main {
 footer{
     text-align: center; 
     font-weight: bold;
-    background-color: #2C4F74;
-    color: whitesmoke;
+   @include footer($color-principal, white);
 }
             /* fin footer*/
 
@@ -390,9 +387,7 @@ footer{
 /*CONTACTO*/  
 main {
     .contacto1, .contacto2 {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+        @include encabezado (flex, column, center);
    justify-content: center;
    text-align: center;
    
@@ -414,9 +409,7 @@ main {
         margin-left: 35%;
     }
     .encabezado {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
+        @include encabezado (flex, column, center);
         padding: 10px;
         gap: 20px;
         div img{
